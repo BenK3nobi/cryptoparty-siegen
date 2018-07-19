@@ -1,0 +1,55 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usetheme{Warsaw}  %% Themenwahl
+
+
+% neuer Befehl: \includegraphicstotab[..]{..}
+% Verwendung analog wie \includegraphics
+\newlength{\myx} % Variable zum Speichern der Bildbreite
+\newlength{\myy} % Variable zum Speichern der Bildhöhe
+\newcommand\includegraphicstotab[2][\relax]{%
+% Abspeichern der Bildabmessungen
+\settowidth{\myx}{\includegraphics[{#1}]{#2}}%
+\settoheight{\myy}{\includegraphics[{#1}]{#2}}%
+% das eigentliche Einfügen
+\parbox[c][1.1\myy][c]{\myx}{%
+\includegraphics[{#1}]{#2}}%
+}% Ende neuer Befehl
+
+
+\title{Anonym surfen mit Tor}
+\author{Tobias Becker}
+\date{\today}
+
+\begin{document}
+\maketitle
+%\frame{\tableofcontents[currentsection]}
+
+\section{Tor Funktion}
+\begin{frame}
+\begin{itemize}
+\item Erste Idee 2000 an der Universität Cambridge
+\item 2002 Erste Alpha Version
+\item 2001-2006 wurde die Entwicklung unterstützt von United States Naval Research Laboratory (NRL), Office of Naval Research (ONR) und Defense Advanced Research Projects Agency (DARPA)
+\item 2004-2005 Unterstützung der EFF
+\item 2012 60\% Finanzierung durch US-Regierung
+\end{itemize}
+\end{frame}
+\begin{frame}
+\includegraphicstotab[width=1.0\linewidth]{Bilder/TOR.png}
+\end{frame}
+
+\section{Tor Installation}
+\begin{frame}{How to get TOR?}
+\begin{block}{Tor-Browser-Bundle}
+https://www.torproject.org/download/download-easy.html.en
+\end{block}
+\end{frame}
+\begin{frame}{How to navigate?}
+\begin{block}{Hidden Wiki}
+http://zqktlwi4fecvo6ri.onion/wiki/index.php/Main\_Page
+\end{block}
+\end{frame}
+\end{document}
