@@ -1,0 +1,63 @@
+%Foot
+\defbeamertemplate*{footline}{rahmen theme}
+  {%
+    \leavevmode%
+    \begin{beamercolorbox}[colsep=.5pt]{upper separation line foot}
+    \end{beamercolorbox}
+%  \hbox{%
+  % \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
+  %   \usebeamerfont{section in head/foot}{\bf \insertsectionhead}\hspace*{2ex}
+  % \end{beamercolorbox}%
+  % \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{subsection in head/foot}%
+  %   \usebeamerfont{subsection in head/foot}\hspace*{2ex}\insertsubsectionhead
+  % \end{beamercolorbox}}%
+  % \vskip0pt%
+  %  \begin{beamercolorbox}[colsep=1.5pt]{middle separation line foot}
+  %   \end{beamercolorbox}
+    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{author in head/foot}
+      \usebeamerfont{title in head/foot}\insertsectionhead \hfill \insertshortauthor\hspace*{2ex}(\insertshortinstitute)\hspace*{2ex} \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
+    \end{beamercolorbox}
+  }
+
+
+
+
+%Head
+\defbeamertemplate*{headline}{rahmen theme}
+{%
+  \begin{beamercolorbox}[colsep=1.5pt]{upper separation line head}
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[ht=25pt,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{uni in head/foot}
+      \begin{minipage}[b]{.5\linewidth}
+        Naturwissenschaftlich-Technische Fakult\"{a}t\\[3pt]
+        \color{black} Department Physik\\[3pt]
+        ${}$
+      \end{minipage}
+      \hfill
+      \begin{minipage}[b]{.5\linewidth}
+        \begin{flushright}
+          \includegraphics[width=43.3pt]{logo}\\[3pt]
+        ${}$
+        \end{flushright}
+      \end{minipage}
+      \hspace*{20pt}
+
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[colsep=.5pt]{middle separation line head}
+  \end{beamercolorbox}
+   \begin{beamercolorbox}[ht=4pt,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{uni in head/foot}
+   \end{beamercolorbox}
+  \begin{beamercolorbox}[colsep=.5pt]{lower separation line head}
+  \end{beamercolorbox}
+
+}
+
+
+
+\mode<all>
+
