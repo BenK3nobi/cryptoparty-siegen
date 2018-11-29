@@ -2,9 +2,9 @@
 \usepackage{graphicx}
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
-\usetheme{Warsaw}  %% Themenwahl
 
-
+\usetheme{Siegen}
+\usecolortheme{LILA} 
 % neuer Befehl: \includegraphicstotab[..]{..}
 % Verwendung analog wie \includegraphics
 \newlength{\myx} % Variable zum Speichern der Bildbreite
@@ -18,6 +18,18 @@
 \includegraphics[{#1}]{#2}}%
 }% Ende neuer Befehl
 
+\hypersetup{pdfborderstyle={/S/U/W 0}} % das brauche ich, damit meine Tex-Version nicht komische Verlinkungen zwischen den Sektions macht -- ihr braucht das vielleicht nicht, aber es schadet auch nicht.
+% komische Verlinkungen?
+
+
+% Folgende Zeilen definieren meine Zitat-Umgebung:
+\newcommand{\Untertitel}
+{\begin{flushright}\tiny \rm\textsc{\Quelle}\end{flushright}}
+
+\newenvironment<>{zitat}[1]%
+{\begin{beamerboxesrounded}[upper=white, lower=white, shadow=true]{}%
+		\newcommand{\Quelle}{#1}}%
+	{\Untertitel\end{beamerboxesrounded}}
 
 \title{Anonym surfen mit Tor}
 \author{Tobias Becker}
